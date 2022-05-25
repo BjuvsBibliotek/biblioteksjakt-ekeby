@@ -1,0 +1,235 @@
+<!--
+OM TEKNIKJAKTEN
+==========================================================
+Teknikjakten är inspirerad av escape rooms och skapades som en del 
+av projektet Mer för fler som Umeå kommuns bibliotek deltog i 2018. 
+Projektgruppen bestod av sex personer från olika bibliotek som gick 
+en metodutbildning, SKL:s Innovationsguiden.
+
+Du kan hitta mer information om detta projekt på följande plats
+
+www.minabibliotek.se/merforfler
+
+SKAPA EGNA JAKTER
+==========================================================
+Denna version av teknikjakten är en mall framtagen för att det skall vara
+enkelt att skapa egna teknikjakter.
+kunna skapa egna "teknikjakter".
+
+Ett exempel på teknikjakt kan hittas på:
+
+www.itbib.se/teknikjakten
+
+LICENS OCH MALL
+==========================================================
+Teknikjakten är byggd med hjälp av ett javascript ramverk som heter 
+Twitter bootstrap och en tema som heter Agency.
+Temat kan hittas på följande sida.
+
+https://startbootstrap.com/themes/agency/
+
+Eller här:
+
+https://github.com/BlackrockDigital/startbootstrap-agency
+
+Mallen Agency använder sig av en licens som heter "The MIT License".
+Det innebär följande
+
+The MIT License (MIT)
+
+Copyright (c) 2013-2019 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+SLUT PÅ KOMMENTARER
+==========================================================
+-->
+
+<!--SÅ GÖR DU För att skapa en egen teknikjakt behöver du ändra vissa delar i detta dokument
+sådana platser är märkta med texten ÄNDRA. Läs kommentarerna eller använd sökfunktionen
+ctrl+f för att snabbt hitta de platser du behöver ändra på.-->
+
+
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+  <!--
+  Genom att ändra denna informationen nedan kan du ge jakten ett eget namn
+  EX: <title>Ett helt eget namn</title>
+  Informationen visas inte någonstans på webbsidan utan ändrar det namn som 
+  webbsidans flik/tabb har då du du surfar till sidan.
+  -->
+
+    <title>Biblioteksjakt Ekeby bibliotek</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+
+  <!--Filer som berättar hur sidan skall se ut laddas in. Här behöver vi inte ändra något-->
+  
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+  <!-- Denna del av koden berättar vad menyn skall innehålla -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="./index.html">
+        Biblioteksjakt på Ekeby bibliotek
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./om.html">Så använder du Biblioteksjakten</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./omoss.html">Om teknikjakten</a>
+            </li> 
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--SLUT PÅ DELEN SOM BESKRIVER MENYN LÄNGST UPP-->
+
+    <!--FÖRSTA DELEN SOM INTRODUCERAR JAKTEN STARTAR-->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+        <div class="intro-heading text-uppercase textbox">Hur bra hittar du på biblioteket?</div>
+          <!--<div class="intro-lead-in textbox">Teknikjakten</div>-->
+          
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">
+          Starta jakten!
+          </a>
+        </div>
+      </div>
+    </header>
+    
+    <!-- DELEN SOM BESKRIVER FÖRSTA UPPDRAGET STARTAR -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <!--Sidans största rubrik-->
+            <h2 class="section-heading text-uppercase">Jakten kan börja</h2>
+            <br/>
+            <br/>
+           
+            <!--Frågan-->
+            <h3 class="question">Jag har ett uppdrag åt dig. Har du vad som krävs?</h3>
+            <!--Förklarande text till frågan-->
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- DELEN DÄR MAN MATAR IN SITT SVAR STARTAR -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Svar</h2>
+            <h3 class="section-subheading text-muted" id="moveOn">Svara på frågan för att ta dig vidare</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+
+      <!--VILKEN SIDA SKALL LADDAS OM MAN SVARAT RÄTT-->
+            <form id="radioForm" novalidate="novalidate" 
+            action="./1_tavla.html" 
+            onsubmit="return validateForm()" autocomplete="off">
+              <div class="col-lg-12 text-center">
+                <input type="radio" id="one" name="alternativ" value="yes" checked="checked">
+                <label for="one" style="color:white; font-size:16px;">Ja</label><br/>
+
+                <input type="radio" id="two" name="alternativ" value="no">
+                <label for="two" style="color:white; font-size:16px;">Nej</label><br/>
+
+                <br/><br/>
+              </div>
+              
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Skicka ditt svar</button>
+              </div>
+            </form>   
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DENNA DEL BESKRIVER INFORMATIONEN SOM VISAS LÄNGST NER PÅ SIDAN -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span class="copyright">
+              <a href="http://www.bibliotekfh.se/bjuv?refId=xAFq2G&culture=sv" style="font-weight: bold">
+                  Folkbiblioteken i Bjuvs kommun
+              </a>
+            </span>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+    <!-- Filer som denna mall använder läses in, du behöver inte ändra något här.-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/agency.min.js"></script>
+    <script src="js/agency.min.js"></script>
+
+    <!--I DENNA DEL BERÄTTAR DU VAD SOM ÄR RÄTT SVAR-->
+    <script>
+    function validateForm() {
+
+      /*Validera svaret på fråga med alternativ. Endast ett alternativ kan väljas åt gången,
+      och endast ett svar är rätt. Övriga svar genererar ett felmeddelande i rött. */
+      if (document.forms["radioForm"]["alternativ"].value == "yes") {
+          return true;
+      }else{
+        document.getElementById("moveOn").innerHTML = 
+        "<h3 class=section-subheading text-muted style=color:white>Det har du visst! Inget krävs för att komma in på biblioteket</h3>";
+        return false;
+      }
+    }
+  </script>
+</body>
+</html>
