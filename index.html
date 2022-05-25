@@ -173,12 +173,13 @@ ctrl+f för att snabbt hitta de platser du behöver ändra på.-->
             <form id="radioForm" novalidate="novalidate" 
             action="./1_tavla.html" 
             onsubmit="return validateForm()" autocomplete="off">
-              <div class="col-lg-12 text-center">
-                <input type="radio" id="one" name="alternativ" value="yes" checked="checked">
-                <label for="one" style="color:white; font-size:16px;">Ja</label><br/>
 
-                <input type="radio" id="two" name="alternativ" value="no">
-                <label for="two" style="color:white; font-size:16px;">Nej</label><br/>
+              <div class="col-lg-12 text-center styleAlt">
+                <input type="radio" id="one" name="alternativ" value="yes" style="height:var(--radioHeight); width:var(--radioWidth); vertical-align: middle;" checked="checked">
+                <label for="one">Ja</label><br/>
+
+                <input type="radio" id="two" name="alternativ" value="no" style="height:var(--radioHeight); width:var(--radioWidth); vertical-align: middle;">
+                <label for="two">Nej</label><br/>
 
                 <br/><br/>
               </div>
